@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.empty {
+  width: 100%;
+  height: 400px;
+  background-color: #b18888;
+}
+
+.container80 {
+  width: 80%;
+  margin: auto;
+}
+
+::-moz-selection {
+  background-color: #363636;
+  color: #ffffff;
+}
+
+::selection {
+  background-color: #363636;
+  color: #ffffff;
+}
+
+#shop-list {
+  margin-top: 75px;
+}
+#shop-list .shop-left .shop-left-top p {
+  color: #999999;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
+}
+#shop-list .shop-left .shop-left-top select {
+  min-height: 40px;
+  padding: 7px 17px 7px 7px;
+  line-height: 14px;
+  border: 1px solid #e3e3e3;
+  outline: none;
+  color: #999999;
+}
+#shop-list .shop-left .shop-left-top option {
+  color: #999999;
+  padding: 8px;
+  border: none;
+}
+#shop-list .shop-left .shop-left-center {
+  padding-top: 20px;
+}
+#shop-list .shop-left .shop-left-center .shop-box {
+  border: 1px solid #e3e3e3;
+  margin-bottom: 40px;
+  position: relative;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-img {
+  position: relative;
+  cursor: pointer;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-img img {
+  width: 100%;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-img .shop-sale {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 65px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #10bf9c;
+  text-align: center;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-img .shop-sale p {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 12px;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-text {
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-text h4 {
+  font-size: 17px;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-text .ratings i {
+  color: #db2d2e;
+  font-size: 12px;
+  padding: 0;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-text a {
+  text-decoration: none;
+  color: #999999;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-text a .lined {
+  text-decoration: line-through;
+  color: #999999;
+  font-size: 12px;
+  font-weight: 700;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-text a .underlined {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #10bf9c;
+          text-decoration-color: #10bf9c;
+  color: #363636;
+  font-weight: 700;
+  padding-left: 5px;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-text a .normalOne {
+  color: #363636;
+  font-weight: 700;
+  padding-left: 5px;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-text a .normalOne.ooo {
+  padding-left: 0;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-bottom {
+  text-align: center;
+  padding: 20px 0;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-bottom .add-button {
+  padding: 8px 20px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #db2d2e;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-bottom .add-button span {
+  position: relative;
+  z-index: 55;
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-bottom .add-button:hover::after {
+  transform: scaleY(0.8);
+}
+#shop-list .shop-left .shop-left-center .shop-box .shop-box-bottom .add-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  background-color: #363636;
+  z-index: 2;
+  transition: 0.5s ease-in-out;
+}
+#shop-list .shop-left .shop-left-bottom {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+}
+#shop-list .shop-left .shop-left-bottom ul.shop-numbers {
+  display: flex;
+  list-style: none;
+}
+#shop-list .shop-left .shop-left-bottom ul.shop-numbers li {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+#shop-list .shop-left .shop-left-bottom ul.shop-numbers li a {
+  padding: 8px 15px;
+  font-size: 14px;
+  color: #363636;
+  font-size: 16px;
+  text-decoration: none;
+  border: 1px solid #e3e3e3;
+  transition: 0.5s ease-in-out;
+}
+#shop-list .shop-left .shop-left-bottom ul.shop-numbers li a:hover {
+  background-color: #db2d2e;
+  color: #ffffff;
+}
+#shop-list .shop-left .shop-left-bottom ul.shop-numbers li a.first {
+  background-color: #db2d2e;
+  color: #ffffff;
+}
+#shop-list .shop-left .shop-left-bottom ul.shop-numbers li a i {
+  font-size: 14px;
+}
+#shop-list .shop-right .shop-search h5 {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+#shop-list .shop-right .shop-search h5::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: -13px;
+  width: 20px;
+  height: 2px;
+  background-color: #db2d2e;
+}
+#shop-list .shop-right .shop-search .mySearch {
+  display: flex;
+  margin-top: 25px;
+  width: 240px;
+  border: 1px solid transparent;
+  transition: 0.5s ease-in-out;
+}
+#shop-list .shop-right .shop-search .mySearch .searching {
+  padding-left: 8px;
+  width: 200px;
+  height: 44px;
+  border: none;
+  background-color: #f6f6f6;
+  outline: none;
+}
+#shop-list .shop-right .shop-search .mySearch .submitting {
+  background-color: #db2d2e;
+  height: 44px;
+  width: 48px;
+  border: none;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+#shop-list .shop-right .shop-search .mySearch .submitting:hover {
+  background-color: #363636;
+}
+#shop-list .shop-right .shop-recent {
+  padding-top: 40px;
+}
+#shop-list .shop-right .shop-recent h5 {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+#shop-list .shop-right .shop-recent h5::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: -13px;
+  width: 20px;
+  height: 2px;
+  background-color: #db2d2e;
+}
+#shop-list .shop-right .shop-recent .shop-recent-box {
+  padding-top: 25px;
+}
+#shop-list .shop-right .shop-recent .shop-recent-box .recent-box-text {
+  color: #999999;
+}
+#shop-list .shop-right .shop-recent .shop-recent-box .recent-box-text a {
+  text-decoration: none;
+  color: #999999;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.5s ease-in-out;
+}
+#shop-list .shop-right .shop-recent .shop-recent-box .recent-box-text a:hover {
+  color: #db2d2e;
+}
+#shop-list .shop-right .shop-recent .shop-recent-box .recent-box-text i {
+  font-size: 14px;
+}
+#shop-list .shop-right .shop-recent .shop-recent-box .recent-box-text span {
+  font-size: 13px;
+}
+#shop-list .shop-right .shop-cat {
+  padding-top: 50px;
+}
+#shop-list .shop-right .shop-cat h5 {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+#shop-list .shop-right .shop-cat h5::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: -13px;
+  width: 20px;
+  height: 2px;
+  background-color: #db2d2e;
+}
+#shop-list .shop-right .shop-cat select {
+  margin-top: 25px;
+  width: 95%;
+  min-height: 40px;
+  padding: 14px;
+  line-height: 14px;
+  border-color: #e3e3e3;
+}
+#shop-list .shop-right .shop-cat option {
+  color: #999999;
+}
+#shop-list .shop-right .shop-comments {
+  padding-top: 40px;
+}
+#shop-list .shop-right .shop-comments h5 {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 40px;
+}
+#shop-list .shop-right .shop-comments h5::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: -13px;
+  width: 20px;
+  height: 2px;
+  background-color: #db2d2e;
+}
+#shop-list .shop-right .shop-comments h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #999999;
+  line-height: 23px;
+}
+#shop-list .shop-right .shop-comments h4 a {
+  text-decoration: none;
+  color: #db2d2e;
+  transition: 0.5s ease-in-out;
+}
+#shop-list .shop-right .shop-comments h4 a:hover {
+  color: #363636;
+}
+#shop-list .shop-right .shop-meta {
+  padding-top: 40px;
+}
+#shop-list .shop-right .shop-meta h5 {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 40px;
+}
+#shop-list .shop-right .shop-meta h5::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: -13px;
+  width: 20px;
+  height: 2px;
+  background-color: #db2d2e;
+}
+#shop-list .shop-right .shop-meta ul {
+  list-style: none;
+  padding: 0;
+}
+#shop-list .shop-right .shop-meta ul li {
+  display: flex;
+  padding-bottom: 15px;
+  align-items: center;
+}
+#shop-list .shop-right .shop-meta ul li i {
+  font-size: 12px;
+  font-weight: 700;
+  color: #999999;
+}
+#shop-list .shop-right .shop-meta ul li a {
+  text-decoration: none;
+  color: #999999;
+  padding-left: 12px;
+  transition: 0.5s ease-in-out;
+  font-weight: 400;
+  font-size: 15px;
+}
+#shop-list .shop-right .shop-meta ul li a:hover {
+  color: #db2d2e;
+}
+#shop-list .shop-right .shop-meta ul li a abbr {
+  border-bottom: 1px dotted #777;
+}
+#shop-list .shop-right .shop-tag h5 {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 40px;
+}
+#shop-list .shop-right .shop-tag h5::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: -13px;
+  width: 20px;
+  height: 2px;
+  background-color: #db2d2e;
+}
+#shop-list .shop-right .shop-tag ul.tag-ul {
+  list-style: none;
+  padding: 0;
+}
+#shop-list .shop-right .shop-tag ul.tag-ul li {
+  border: none;
+  display: inline-block;
+}
+#shop-list .shop-right .shop-tag ul.tag-ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #999999;
+  padding: 4px 10px;
+  font-size: 14px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #e3e3e3;
+  transition: 0.5s ease-in-out;
+}
+#shop-list .shop-right .shop-tag ul.tag-ul li a:hover {
+  background-color: #db2d2e;
+  color: #ffffff;
+  border-color: transparent;
+}/*# sourceMappingURL=shop.css.map */
